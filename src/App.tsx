@@ -1,9 +1,5 @@
 function App() {
-  return (
-    <div>
-      create react app
-    </div>
-  );
+  return <div>create react app</div>
 }
 
-export default App;
+export default App
