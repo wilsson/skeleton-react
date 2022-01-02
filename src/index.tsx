@@ -2,9 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyled = createGlobalStyle`
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", 
+    "Ubuntu", "Cantarell", "Fira Sans", 
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+`
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyled />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
